@@ -34,3 +34,5 @@ public class Node {
 		this.next = next;
 	}
 }
+
+// brak nieużywanych seterów
