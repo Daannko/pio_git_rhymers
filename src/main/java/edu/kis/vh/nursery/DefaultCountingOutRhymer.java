@@ -6,6 +6,8 @@ public class DefaultCountingOutRhymer {
     private final int EMPTY_STACK_VALUE = -1;
     private final int[] numbers = new int[SIZE];
 
+    //TODO: Mozna usunac metode getTotal (Nie jest nigdzie używana)
+
     public int getTotal() {
         return total;
     }

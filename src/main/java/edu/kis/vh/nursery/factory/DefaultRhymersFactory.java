@@ -14,6 +14,8 @@ import edu.kis.vh.nursery.HanoiRhymer;
  */
 public class DefaultRhymersFactory implements Rhymersfactory {
 
+	//TODO: getStandard and FalseRhymer zwaracją to samo, można jedna usunąć lub zrefaktorować metode.
+
 	@Override
 	public DefaultCountingOutRhymer getStandardRhymer() {
 		return new DefaultCountingOutRhymer();

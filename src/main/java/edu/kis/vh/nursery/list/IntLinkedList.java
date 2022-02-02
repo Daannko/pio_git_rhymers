@@ -1,7 +1,9 @@
 package edu.kis.vh.nursery.list;
 
+//TODO: cała klasa nie jest używana. możliwe usuniecie
 public class IntLinkedList {
 
+	//TODO: Klasa node może być statyczna
 	private class Node {
 
 		private int value;
@@ -38,8 +40,10 @@ public class IntLinkedList {
 	}
 
 	private Node last;
+	//TODO: NIeuzywana zmienna i, możliwe usunięcie.
 	private int i;
 
+	//TODO: metoda push nie jest nigdy użyta, możliwe usunięcie.
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -54,6 +58,7 @@ public class IntLinkedList {
 		return last == null;
 	}
 
+	//TODO: metody isFull,top,pop nigdy nie użyawne, możliwe całkowite usunięcie.
 	public boolean isFull() {
 		return false;
 	}
