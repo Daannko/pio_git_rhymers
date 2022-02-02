@@ -1,29 +1,38 @@
 package edu.kis.vh.nursery.factory;
 
-import edu.kis.vh.nursery.defaultCountingOutRhymer;
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.FIFORhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
-import edu.kis.vh.nursery.factory.Rhymersfactory;
 
+/**
+ *
+ * Author: Daannko
+ * DefaultRhymersFactory implementuje interfejs Rhymersfactory
+ * Klasa posiada cztery gettery nie wymagające argumentych,
+ * zwracające nowe obiekty klass DefaultCountingOutRhymer,FIFORhymer,HanoiRhymer
+ *
+ */
 public class DefaultRhymersFactory implements Rhymersfactory {
 
+	//TODO: getStandard and FalseRhymer zwaracją to samo, można jedna usunąć lub zrefaktorować metode.
+
 	@Override
-	public defaultCountingOutRhymer GetStandardRhymer() {
-		return new defaultCountingOutRhymer();
+	public DefaultCountingOutRhymer getStandardRhymer() {
+		return new DefaultCountingOutRhymer();
 	}
 
 	@Override
-	public defaultCountingOutRhymer GetFalseRhymer() {
-		return new defaultCountingOutRhymer();
+	public DefaultCountingOutRhymer getFalseRhymer() {
+		return new DefaultCountingOutRhymer();
 	}
 
 	@Override
-	public defaultCountingOutRhymer GetFIFORhymer() {
+	public DefaultCountingOutRhymer getFIFORhymer() {
 		return new FIFORhymer();
 	}
 
 	@Override
-	public defaultCountingOutRhymer GetHanoiRhymer() {
+	public DefaultCountingOutRhymer getHanoiRhymer() {
 		return new HanoiRhymer();
 	}
 
